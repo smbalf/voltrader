@@ -28,7 +28,7 @@
  *   reported by RuneLite as BUYING/SELLING and ignored here, so each row
  *   is a final, settled fill — exactly what the FIFO ledger wants.
  */
-package com.voltrader;
+package com.example;
 
 import com.google.gson.Gson;
 import com.sun.net.httpserver.HttpServer;
@@ -50,7 +50,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
     name = "VolTrader Bridge",
     description = "Serves completed GE fills to the VOL TRADER terminal on localhost:8087"
 )
-public class VolTraderBridgePlugin extends Plugin
+public class ExamplePlugin extends Plugin
 {
     private static final int PORT = 8087;
     private static final int MAX_TRADES = 2000;   // ring-buffer cap
